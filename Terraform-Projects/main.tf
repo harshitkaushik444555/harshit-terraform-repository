@@ -1,3 +1,5 @@
+#This will create an ec2-instance on AWS named 'my-first-instance'
+
 provider "aws" {
     region = "us-east-1"  # Set your desired AWS region
 }
