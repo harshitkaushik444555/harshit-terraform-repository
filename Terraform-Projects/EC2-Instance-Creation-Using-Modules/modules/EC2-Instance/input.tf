@@ -8,5 +8,5 @@ variable "instance_type_value" {
 
 variable "resource_name" {
   type    = string
-  default = "test_machine_one"
+  default = "test_machine_RED"
 }
