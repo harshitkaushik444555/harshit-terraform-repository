@@ -1,1 +1,39 @@
+What is IaC or Infrastrujcture as Code?
+When you  are creating your infrastructure using python, shell, or YAML code, it is known as IaC.
+IaC tools are:
+-Terraform
+-AWS CFT
+-Azure Resource Manager Template
+-OpenShift Heat Template
+
+How terraform works internally?
+Terraform uses API as Code approach internally.It talks to cloud prvider API. Based on your requirements the HCL code will convert to the AWS API, Azure API and Terraform will use this API to create your infrastructure.
+
+What is API?
+It is an application interface. By using API you can talk to any application programatically. You can use command line or write any script.
+For example , to talk to AWS services you don't need to login again and again on AWS account. You can use AWS API to talk with AWS services programatically.But for this you need to know programming.So to solve this problem cloud providers provide templates to write in JSON/YAML like AWS CFT, Azure Resource Manager Template, OpenShift Heat Templates.
+
+Why Terraform when you have cloud providers templates?
+-Because you can not learn every cloud provider's tools so just learn terraform
+-Terraform works on every cloud provider platform
+-Uses human readable HCL language
+-Terraform maintains a state file that tracks the current state of your infrastructure
+-Large community of contributors
+
+How terraform get access to your AWS account?
+You run 'aws configure' command in your terminal which asks for your aws access key and aws secret access key throuh which terraform get access to your account.
+
+what is terraform lifecycle?
+Terraform init, terraform plan, terraform apply, terraform destroy.
+
+What is terraform state file?
+Terraform creates a statefile to record whatever it is creating on cloud. If state file is deleted then terraform will not know anything what it has created.
+
+How terraform destroy command works?
+When you run this command terraform first looks into statefile and see what it has created and will destroy it.
+
+What types of providers are in Terraform?
+Official providers: AWS, Azure, GCP
+Partner providers: Alibaba, Oracle cloud
+Community providers: There are multiples
 
