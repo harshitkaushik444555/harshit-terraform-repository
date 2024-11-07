@@ -1,0 +1,8 @@
+What is state file?
+State file records the information about the resources those terraform has created on the cloud. State file is the heart of the terraform.
+
+What if there is no state file?
+Terraform will not remember what resources it has created on the cloud. New resources will be created every time if you will try to update the name, tag etc of the existing resources. Before creating new resources terraform first checks the state file to know the difference between what it has created and what it will create.
+
+Which command is used to see the state file?
+terraform show
