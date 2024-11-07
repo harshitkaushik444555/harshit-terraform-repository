@@ -37,3 +37,6 @@ Official providers: AWS, Azure, GCP
 Partner providers: Alibaba, Oracle cloud
 Community providers: There are multiples
 
+Why output.tf file is required?
+Because most of the time developers don't have access to state file so they won't be able to know the details about the resoures created on aws. So to provide information  about the resources created by terraform the output.tf file is used which can provide necessary information developers need. 
+
