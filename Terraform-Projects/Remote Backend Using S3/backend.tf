@@ -4,6 +4,6 @@ terraform {
     key            = "terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "harshit-dynamodb-table" //dynamo table name
+    dynamodb_table = "harshit-dynamodb-table" //dynamo table name. it is for locking the state
   }
 }
